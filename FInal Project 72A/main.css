@@ -109,14 +109,38 @@ body, html {
 }
 
 #contact {
-    background-image: url("wp6106990.jpg");
+    position: relative;
+    background-image: url("City.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.393); 
+    z-index: 0; 
+}
+
+#contact * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
 
 .content-selection {
     padding: 50px 15px;
     text-align: center;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 h1, h2 {
