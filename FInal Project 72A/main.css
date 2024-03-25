@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    opacity: 1;
+    
+}
+
+#home {
+    position: relative;
+    background-image: url("Logo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.692); 
+    z-index: 0; 
+}
+
+#home * {
+    position: relative;
+    z-index: 2;
+}
+
+
+#welcome {
+    position: relative;
+    background-image: url("Story_Ark_2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.356); 
+    z-index: 0; 
+}
+
+#welcome * {
+    position: relative;
+    z-index: 2;
+}
+
+#favlink {
+    position: relative;
+    background-image: url("Link.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#favlink::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.219); 
+    z-index: 0; 
+}
+
+#favlink * {
+    position: relative;
+    z-index: 2;
+}
+
+#contact {
+    background-image: url("wp6106990.jpg");
+}
+
+.content-selection {
+    padding: 50px 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    max-width: 600px;
+    margin: auto;
+}
