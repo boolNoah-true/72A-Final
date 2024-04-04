@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     height: 100%;
     font-family: Arial, sans-serif;
+    
 }
 
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
 .parallax-section {
-    height: 100vh;
+    height: 150vh;
+    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,6 +28,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
     color: white;
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
     font-size: 2em;
@@ -28,6 +40,8 @@ body, html {
     height: 500px;
     border-radius: 100%;
     opacity: 1;
+    position: relative;
+    top: -300px;
     
 }
 
@@ -85,7 +99,7 @@ body, html {
 
 #favlink {
     position: relative;
-    background-image: url("Link.jpg");
+    background-image: url("Link2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,7 +113,7 @@ body, html {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.219); 
+    background: rgba(0, 0, 0, 0.295); 
     z-index: 0; 
 }
 
@@ -108,48 +122,132 @@ body, html {
     z-index: 2;
 }
 
-#contact {
+#resume {
     position: relative;
-    background-image: url("City.gif");
+    background-image: url("resume.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#contact::before {
+#resume::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.393); 
+    background: rgba(0, 0, 0, 0.425); 
     z-index: 0; 
 }
 
-#contact * {
+#resume * {
+    position: relative;
+    z-index: 2;
+}
+
+#voyage {
+    position: relative;
+    background-image: url("Marisol2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#voyage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226); 
+    z-index: 0; 
+}
+
+#voyage * {
     position: relative;
     z-index: 2;
 }
 
 
+#feedback {
+    position: relative;
+    background-image: url("Contact.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#feedback::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.308); 
+    z-index: 0; 
+}
+
+#feedback * {
+    position: relative;
+    z-index: 2;
+}
 
 
 .content-selection {
+    position: relative;
     padding: 50px 15px;
     text-align: center;
     background-color: #000000;
     color: #ffffff;
+    z-index: 1;
 }
+
+.content-selection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("banner.png");
+    background-size: 2560px 1440px;
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    opacity: 0.85; 
+    pointer-events: none; 
+    z-index: -1;
+}
+
+
 
 h1, h2 {
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1em;
+    font-size: .89em;
     line-height: 1.6em;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+
+a:hover {
+    color:rgba(40, 169, 255, 0.945);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:rgb(194, 194, 194);
+}
+
+a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
 }

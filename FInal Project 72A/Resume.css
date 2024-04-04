@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background: #0a0a0a; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); 
+}
+header {
+    text-align: center;
+    border-bottom: 1px solid #2e2e2e; 
+}
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.contact-info li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+.contact-info a {
+    color: #4db8ff; 
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+h1 {
+    color: #ffffff;
+    margin: 0;
+    padding: 20px 0;
+}
+h2 {
+    border-bottom: 2px solid #4db8ff; 
+    color: #4db8ff; 
+}
+p, li {
+    color: #c7c7c7; 
+}
+a {
+    color: #4db8ff; 
+}
+a:hover {
+    text-decoration: underline;
+}
+.experience-item, .education-item, .certificate-item {
+    margin-bottom: 15px;
+}
+.job-title, .education-title, .certificate-title {
+    color: #ffffff;
+    font-weight: bold;
+}
+.job-dates, .education-dates, .certificate-dates {
+    font-style: italic;
+    color: #a7a7a7;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .contact-info li {
+        display: block;
+        margin: 5px 0;
+    }
+}

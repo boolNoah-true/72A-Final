@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+    background-image: url('Neon2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    flex-grow: 1;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff; 
+    text-align: center;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.733); 
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+a:hover {
+    color:rgba(40, 169, 255, 0.945);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:rgb(194, 194, 194);
+}
+
+a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+

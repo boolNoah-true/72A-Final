@@ -1,0 +1,50 @@
+body {
+    line-height: 1;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #fff;
+    background: #000; /* Replace with your website's background */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+nav#navbar {
+    position: fixed; /* Fixed navbar to follow the user */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; /* Replace with your navbar's background color */
+    z-index: 1000;
+}
+
+nav#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav#navbar ul li {
+    margin: 0 10px;
+}
+
+nav#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+section {
+    padding: 50px;
+    margin-top: 50px; /* Adjust this value to the height of your navbar */
+}
+
+/* Add your styling for headings, paragraphs, images, etc. */
+h2 {
+    color: #ffffff; /* Replace with your heading color */
+    margin-bottom: 20px;
+    padding-top: 60px; /* This offsets the section position due to fixed navbar */
+    position: relative;
+}
+
+p {
+    color: #cccccc; 
+}

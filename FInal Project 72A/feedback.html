@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Noah Scott's Feedback Page</title>
+    <link rel="stylesheet" href="site.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Story Ark Feedback Page</h1>
+        <img class="floatright" src="Neon.png" alt="Want Feedback">
+    </header>
+    <p id="welcome">We welcome your thoughts! Please feel free to fill out our form below and send us your feedback. </p>
+
+    <form action="response.html" method="get">
+        <fieldset id="feedbackinfo">
+            <legend>Feedback Info</legend>
+            <p><label for="comments">Comments: </label><textarea rows="5" cols="40" name="comments" id="comments" required="required" placeholder="**Required Entry**"></textarea>
+            </p>
+            <p><label for="re">Your feedback is regarding: </label>
+                <select name="re" id="re">
+                    <option value="none">Choose One!</option>
+                    <option value="products">Products</option>
+                    <option value="cust-serv">Customer Service</option>
+                    <option value="site">Web Site</option>
+                    <option value="shipping">Shipping</option>
+                    <option value="pricing">Pricing</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset id="contactinfo">
+            <legend>Contact Info</legend>
+            <p><label for="name">Name: </label><input type="text" name="name" id="name" required="required" placeholder="**Required Entry**"></p>
+            <p>How can we contact you? (check all that apply)<br>
+                <input type="checkbox" name="call" id="call"> <label for="call">Call?</label> <input type='checkbox' name="text" id="text"> <label for="text">Text?</label> <input type="checkbox" name="email" id="email"> <label for="email">Email?</label>
+            </p>
+            <p><label for="phonenum">Phone:</label> <input type="tel" name="phonenum" id="phonenum" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Use xxx-xxx-xxxx"></p>
+            <p><label for="emailaddy">Email:</label> <input type="email" name="emailaddy" id="emailaddy"></p>
+        </fieldset>
+        <p><input type="submit" value="Send Feedback"></p>
+    </form>
+    <footer>
+        <p>Copyright Noah Scott, all rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+

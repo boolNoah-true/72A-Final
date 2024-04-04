@@ -1,0 +1,96 @@
+body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            background: #0a0a0a; 
+            color: #fff; 
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        
+        }
+        header h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+        header p {
+            text-align: right;
+        }
+        #welcome{
+            text-align: center;
+        }
+        img.floatright {
+            max-width: 220px;
+            height: auto;
+            margin-left: 20px;
+        }
+        form {
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); 
+        }
+        fieldset {
+            border-color: #4db8ff; 
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        legend {
+            color: #4db8ff; 
+            font-weight: bold;
+            padding: 0 5px;
+        }
+        label {
+            color: #c7c7c7; 
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea,
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #555; 
+            background-color: #333; 
+            color: #ddd; 
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4db8ff; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #39a0db; 
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #2e2e2e;
+        }
+        @media (max-width: 768px) {
+            header p, img.floatright {
+                float: none;
+                text-align: center;
+            }
+            form {
+                width: 95%;
+            }
+        }
