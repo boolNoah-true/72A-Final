@@ -2,16 +2,16 @@ body {
     line-height: 1;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
-    background: #000; /* Replace with your website's background */
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    background: #000; 
+    scroll-behavior: smooth; 
 }
 
 nav#navbar {
-    position: fixed; /* Fixed navbar to follow the user */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background: #333; /* Replace with your navbar's background color */
+    background: #333; 
     z-index: 1000;
 }
 
@@ -34,17 +34,44 @@ nav#navbar ul li a {
 
 section {
     padding: 50px;
-    margin-top: 50px; /* Adjust this value to the height of your navbar */
+    margin-top: 50px; 
 }
 
-/* Add your styling for headings, paragraphs, images, etc. */
+
 h2 {
-    color: #ffffff; /* Replace with your heading color */
+    font-size: 35px;
+    color: #ffffff; 
     margin-bottom: 20px;
-    padding-top: 60px; /* This offsets the section position due to fixed navbar */
+    padding-top: 60px; 
     position: relative;
 }
 
 p {
+    font-size: 20px;
     color: #cccccc; 
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.character-portrait {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px;
+    border: 2px solid #4db8ff; 
+}
+
+.character-description {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff; 
+    flex-grow: 1;
+}
+
+.character-description h3 {
+    color: #4db8ff; 
 }
